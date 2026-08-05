@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Advogado de Família no Brasil para Brasileiros no Exterior | Fabricio Meirelles
+    </title>
+
+    <meta name="description" content="
+    Advogado especializado em Direito de Família no Brasil para brasileiros que vivem no exterior.
+    Atendimento online para divórcio, guarda, pensão alimentícia, inventário e questões familiares.
+    ">
+
+    <meta name="author" content="Fabricio Meirelles Advogado">
+
+    <meta property="og:title" content="Direito de Família no Brasil para Brasileiros que Vivem no Exterior">
+
+    <meta property="og:description" content="
+    Atendimento jurídico online para brasileiros residentes no exterior que precisam resolver questões familiares no Brasil.
+    ">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://fabriciomeirelles.com">
+
+    <link rel="canonical" href="https://fabriciomeirelles.com">
+
+    <!-- Fonte profissional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Dados estruturados para Google -->
+    <script type="application/ld+json">
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Attorney",
+      "name": "Fabricio Meirelles",
+      "description": "Advogado especializado em Direito de Família no Brasil para brasileiros que vivem no exterior.",
+      "url": "https://fabriciomeirelles.com",
+      "areaServed": "Brasil",
+      "availableLanguage": [
+        "Portuguese",
+        "English"
+      ]
+    }
+
+      </script>
+
+
+    <style>
+/* ===== RESET GERAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ===== CABEÇALHO ===== */
+
+header {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    position: sticky;
+    top: 0;
+    background: rgba(11, 11, 11, 0.95);
+    z-index: 10;
+}
+
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ===== ESTRUTURA ===== */
+
+main {
+    width: 100%;
+}
+
+
+section {
+    padding: 90px 8%;
+}
+
+
+/* ===== HERO ===== */
+
+#inicio {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+}
+
+
+#inicio h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+
+#inicio p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+
+#inicio a {
+    display: inline-block;
+    width: fit-content;
+    padding: 15px 35px;
+    background: #d4af37;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+
+#inicio a:hover {
+    transform: translateY(-3px);
+    background: #f0c85a;
+}
+
+
+/* ===== TITULOS ===== */
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #d4af37;
+}
+
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== SEÇÕES ===== */
+
+#sobre,
+#como-funciona,
+#faq {
+    background: #111111;
+}
+
+
+section p {
+    color: #dddddd;
+    max-width: 750px;
+}
+
+
+/* ===== ÁREAS DE ATUAÇÃO ===== */
+
+#atuacao div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+#atuacao p {
+    background: #151515;
+    border: 1px solid rgba(212,175,55,0.25);
+    padding: 25px;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+
+/* ===== LISTA ===== */
+
+ol {
+    padding-left: 20px;
+}
+
+
+li {
+    margin-bottom: 15px;
+}
+
+
+/* ===== CONTATO ===== */
+
+#contato a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(212,175,55,0.25);
+    color: #999999;
+}
+
+
+/* ===== CELULAR ===== */
+
+@media(max-width:768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    section {
+        padding: 60px 6%;
+    }
+
+
+    #inicio h1 {
+        font-size: 2.2rem;
+    }
+
+}
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        Fabricio Meirelles
+    </div>
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#atuacao">Atuação</a>
+
+        <a href="#como-funciona">Como funciona</a>
+
+        <a href="#faq">FAQ</a>
+
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<section id="inicio">
+
+    <h1>
+        Direito de Família no Brasil para Brasileiros que Vivem no Exterior
+    </h1>
+
+
+    <p>
+        Atendimento jurídico online para brasileiros que precisam resolver questões familiares no Brasil, mesmo vivendo fora do país.
+    </p>
+
+
+    <a href="#contato">
+        Agendar Consulta
+    </a>
+
+
+</section>
+
+
+
+<section id="sobre">
+
+
+    <h2>
+        Experiência jurídica para conectar você ao Brasil
+    </h2>
+
+
+    <p>
+        Sou advogado brasileiro com experiência em atendimento jurídico e acompanhamento de questões familiares perante a legislação brasileira.
+    </p>
+
+
+</section>
+
+
+
+
+<section id="atuacao">
+
+
+<h2>
+Áreas de Atuação
+</h2>
+
+
+<div>
+
+<p>Divórcio no Brasil</p>
+
+<p>Guarda de filhos</p>
+
+<p>Pensão alimentícia</p>
+
+<p>Inventário</p>
+
+<p>União estável</p>
+
+<p>Questões familiares internacionais</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="como-funciona">
+
+
+<h2>
+Como funciona o atendimento
+</h2>
+
+
+<ol>
+
+<li>Primeiro contato e análise inicial</li>
+
+<li>Planejamento jurídico</li>
+
+<li>Organização da documentação</li>
+
+<li>Acompanhamento do caso no Brasil</li>
+
+</ol>
+
+
+</section>
+
+
+
+
+<section id="faq">
+
+
+<h2>
+Perguntas frequentes
+</h2>
+
+
+<h3>
+Posso resolver um divórcio no Brasil morando no exterior?
+</h3>
+
+<p>
+Sim. Muitos procedimentos podem ser conduzidos de forma online, conforme as regras aplicáveis ao caso.
+</p>
+
+
+
+<h3>
+Preciso viajar ao Brasil?
+</h3>
+
+<p>
+A necessidade de viagem depende da situação específica e dos procedimentos envolvidos.
+</p>
+
+
+</section>
+
+
+
+
+<section id="contato">
+
+
+<h2>
+Fale comigo
+</h2>
+
+
+<p>
+Agende uma consulta jurídica online.
+</p>
+
+
+<a href="#">
+WhatsApp
+</a>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 Fabricio Meirelles Advogado. Todos os direitos reservados.
+</p>
+
+</footer>
+
+
+<script>
+// ===== ANO AUTOMÁTICO NO RODAPÉ =====
+
+const footerYear = document.querySelector("footer p");
+
+if (footerYear) {
+    const year = new Date().getFullYear();
+    footerYear.innerHTML = 
+    `© ${year} Fabricio Meirelles Advogado. Todos os direitos reservados.`;
+}
+
+
+
+// ===== ANIMAÇÃO SUAVE AO CARREGAR =====
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach(section => {
+
+        section.style.opacity = "0";
+        section.style.transform = "translateY(30px)";
+        section.style.transition = "all 0.8s ease";
+
+    });
+
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+            }
+
+        });
+
+    });
+
+
+    sections.forEach(section => {
+
+        observer.observe(section);
+
+    });
+
+});
+
+
+
+// ===== BOTÃO WHATSAPP =====
+
+const whatsappButton = document.querySelector("#contato a");
+
+if (whatsappButton) {
+
+    whatsappButton.href =
+"https://wa.me/12365129727";
+
+    whatsappButton.target = "_blank";
+
+}
+</script>
+
+
+</body>
+
+</html>

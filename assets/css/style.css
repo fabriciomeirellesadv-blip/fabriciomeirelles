@@ -203,11 +203,10 @@ p {
 
 .logo img {
     display: block;
-    width: 220px;
-    height: 55px;
+    width: 250px;
+    height: 62px;
     object-fit: contain;
 }
-
 
 .logo span {
 

@@ -204,8 +204,7 @@ p {
 .logo img {
     display: block;
     width: 250px;
-    height: 62px;
-    object-fit: contain;
+    height: auto;
 }
 
 .logo span {

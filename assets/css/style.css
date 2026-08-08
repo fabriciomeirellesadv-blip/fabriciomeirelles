@@ -196,11 +196,15 @@ p {
 
 
 .logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
 
-    font-family: var(--title-font);
-    font-size: 1.5rem;
-    color: var(--white);
-
+.logo img {
+    display: block;
+    width: 145px;
+    height: auto;
 }
 
 

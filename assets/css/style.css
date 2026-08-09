@@ -279,7 +279,7 @@ p {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 60px;
     overflow: hidden;
 
 }
@@ -323,7 +323,7 @@ p {
     font-size: 0.75rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
 }
 
@@ -339,7 +339,7 @@ p {
 
 .hero h1 {
 
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 
 }
 
@@ -349,7 +349,7 @@ p {
 
     max-width: 620px;
     font-size: 1.25rem;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
 
 }
 

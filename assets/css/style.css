@@ -268,12 +268,11 @@ p {
 .hero {
     min-height: calc(100vh - 100px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
-    padding-top: 40px;
+    padding-top: 125px;
     overflow: hidden;
-}
-.hero::before {
+}.hero::before {
 
     content: "";
     position: absolute;

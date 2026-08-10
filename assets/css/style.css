@@ -398,7 +398,7 @@ p {
 .photo-frame {
     position: relative;
     overflow: hidden;
-    transform: translateY(35px);
+    transform: translateY(45px);
 }
 
 

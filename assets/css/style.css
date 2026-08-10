@@ -345,11 +345,10 @@ p {
 
 
 .hero-content p {
-
     max-width: 620px;
-    font-size: 1.25rem;
-    margin-bottom: 32px;
-
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
 }
 
 

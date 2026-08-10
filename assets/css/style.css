@@ -396,12 +396,10 @@ p {
 
 
 .photo-frame {
-
     position: relative;
     overflow: hidden;
-
+    transform: translateY(35px);
 }
-
 
 
 .photo-frame::after {

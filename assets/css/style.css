@@ -270,7 +270,7 @@ p {
     display: flex;
     align-items: flex-start;
     position: relative;
-    padding-top: 80px;
+    padding-top: 60px;
     overflow: hidden;
 }.hero::before {
 

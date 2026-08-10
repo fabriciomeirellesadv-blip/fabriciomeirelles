@@ -223,20 +223,17 @@ p {
 .nav {
 
     display: flex;
-    gap: 35px;
+    gap: 22px;
 
 }
 
 
 
 .nav a {
-
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--gray);
     transition: var(--transition);
-
 }
-
 
 
 .nav a:hover {
@@ -274,14 +271,13 @@ p {
 
 
 .hero {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 120px);
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 40px;
+    padding-top: 20px;
     overflow: hidden;
 }
-
 
 
 .hero::before {

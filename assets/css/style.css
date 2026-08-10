@@ -170,7 +170,6 @@ p {
     padding: 25px 0;
     transition: var(--transition);
 }
-
 .header.scrolled {
 
     background: rgba(8,8,8,0.92);
@@ -271,10 +270,9 @@ p {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 140px;
+    padding-top: 40px;
     overflow: hidden;
 }
-
 .hero::before {
 
     content: "";

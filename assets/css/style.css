@@ -398,9 +398,7 @@ p {
 .photo-frame {
     position: relative;
     overflow: hidden;
-    transform: translateY(36px);
 }
-
 
 .photo-frame::after {
 

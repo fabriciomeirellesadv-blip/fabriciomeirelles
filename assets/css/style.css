@@ -162,7 +162,7 @@ p {
 
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -170,7 +170,6 @@ p {
     padding: 25px 0;
     transition: var(--transition);
 }
-
 
 .header.scrolled {
 

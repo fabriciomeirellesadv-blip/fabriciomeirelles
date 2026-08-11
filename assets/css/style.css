@@ -324,7 +324,7 @@ p {
     max-width: 620px;
     font-size: 1.05rem;
     line-height: 1.6;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
 }
 .hero-content {
     transform: translateY(-20px);
@@ -335,9 +335,8 @@ p {
     gap: 18px;
     align-items: center;
     position: relative;
-    top: -30px;
+    top: -10px;
 }
-
 .btn {
 
     display: inline-flex;

@@ -335,9 +335,9 @@ p {
     display: flex;
     gap: 18px;
     align-items: center;
-    transform: translateY(-15px);
+    position: relative;
+    top: -30px;
 }
-
 
 .btn {
 

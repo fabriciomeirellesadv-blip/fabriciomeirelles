@@ -334,7 +334,9 @@ p {
     margin-bottom: 24px;
 }
 
-
+.hero-content {
+    transform: translateY(-35px);
+}
 
 .hero-buttons {
 

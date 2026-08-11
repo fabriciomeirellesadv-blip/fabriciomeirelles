@@ -301,13 +301,13 @@ p {
 
 
 .eyebrow {
-
     color: var(--gold);
     font-size: 0.75rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 22px;
-
+    position: relative;
+    top: 12px;
 }
 
 

@@ -324,9 +324,8 @@ p {
     max-width: 620px;
     font-size: 1.05rem;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 44px;
 }
-
 .hero-content {
     transform: translateY(-20px);
 }

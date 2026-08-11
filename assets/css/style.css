@@ -306,10 +306,8 @@ p {
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 22px;
-    position: relative;
-    top: 12px;
+    transform: translateY(14px);
 }
-
 
 
 .eyebrow span {

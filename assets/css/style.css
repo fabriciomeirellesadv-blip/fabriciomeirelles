@@ -945,6 +945,64 @@ ACCESSIBILITY
 PLANEJAMENTO JURÍDICO
 ========================= */
 
+.planning-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.planning-card {
+    padding: 36px;
+    border: 1px solid rgba(201, 164, 93, 0.25);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.planning-card h3 {
+    margin-bottom: 24px;
+}
+
+.planning-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.planning-card li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.planning-investment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.planning-investment .investment-label {
+    color: var(--gold);
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.planning-investment strong {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.planning-investment p {
+    margin-bottom: 20px;
+}
+
+.planning-note {
+    padding-top: 20px;
+    border-top: 1px solid rgba(201, 164, 93, 0.2);
+    line-height: 1.6;
+}
+
 .planning-investment .btn {
     margin-top: 24px;
 }

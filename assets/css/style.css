@@ -991,14 +991,6 @@ PLANEJAMENTO JURÍDICO
     justify-content: center;
 }
 
-.planning-investment .investment-label {
-    color: var(--gold);
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
 .planning-investment strong {
     font-size: 2.8rem;
     line-height: 1;

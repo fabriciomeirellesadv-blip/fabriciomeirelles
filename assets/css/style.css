@@ -929,18 +929,22 @@ p {
 
 }
 
-
-
-
-
 /* =========================
-   ACCESSIBILITY
+ACCESSIBILITY
 ========================= */
-
 
 :focus-visible {
 
     outline: 2px solid var(--gold);
     outline-offset: 4px;
 
+}
+
+
+/* =========================
+PLANEJAMENTO JURÍDICO
+========================= */
+
+.planning-investment .btn {
+    margin-top: 24px;
 }

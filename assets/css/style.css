@@ -945,301 +945,69 @@ ACCESSIBILITY
 PLANEJAMENTO JURÍDICO
 ========================= */
 
-.planning {
-    min-height: calc(100vh - 90px);
-    display: flex;
-    align-items: center;
-    padding: 55px 0 45px;
-    overflow: hidden;
+.planning-intro {
+    margin-bottom: 28px;
+}
+
+.planning-intro h2 {
+    font-size: 1.45rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.planning-intro p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 
-/* =========================================================
-   GRID PRINCIPAL
-========================================================= */
+/* MANTÉM AS DUAS COLUNAS */
 
 .planning-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1.25fr 0.95fr;
-    gap: 70px;
-    align-items: center;
-}
-
-
-/* =========================================================
-   TÍTULOS
-========================================================= */
-
-.planning h2 {
-    margin: 0 0 34px;
-    font-family: "Playfair Display", serif;
-    font-size: clamp(2rem, 2.8vw, 2.7rem);
-    font-weight: 400;
-    line-height: 1.15;
-    color: #c9a45d;
-}
-
-
-/* =========================================================
-   LISTA — O QUE VOCÊ RECEBE
-========================================================= */
-
-.planning-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.planning-item {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    column-gap: 18px;
     align-items: start;
 }
 
-.planning-item .check {
-    color: #c9a45d;
-    font-size: 22px;
-    line-height: 1.45;
-    font-weight: 400;
-}
 
-.planning-item p {
-    margin: 0;
-    color: #f1f1f1;
-    font-family: "Inter", sans-serif;
+/* COLUNA ESQUERDA */
 
-    /* MESMO TAMANHO DOS TEXTOS DESCRITIVOS */
-    font-size: 18px;
-    line-height: 1.55;
-    font-weight: 400;
-}
-
-
-/* =========================================================
-   INVESTIMENTO
-========================================================= */
-
-.planning-investment {
+.planning-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 28px;
 }
 
-
-/* =========================================================
-   VALOR
-========================================================= */
-
-.investment-price {
-    margin: -5px 0 4px;
-
-    font-family: "Inter", sans-serif;
-    font-size: clamp(3rem, 5vw, 4.2rem);
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: -2px;
-    color: #ffffff;
+.planning-info .btn {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    align-self: flex-start;
 }
 
-
-/* =========================================================
-   DESCRIÇÃO DO PAGAMENTO
-========================================================= */
-
-.investment-description {
-    margin: 0;
-
-    color: #bdbdbd;
-    font-family: "Inter", sans-serif;
-
-    /* MESMO TAMANHO DOS DEMAIS TEXTOS */
-    font-size: 18px;
-    line-height: 1.55;
-    font-weight: 400;
+.planning-receives h3 {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
 }
 
-
-/* =========================================================
-   LINHA DIVISÓRIA
-========================================================= */
-
-.investment-divider {
-    width: 100%;
-    height: 1px;
-    margin: 32px 0 28px;
-
-    background: rgba(201, 164, 93, 0.28);
-}
-
-
-/* =========================================================
-   EXPLICAÇÃO DO ABATIMENTO
-========================================================= */
-
-.investment-note {
-    margin: 0;
-
-    color: #f1f1f1;
-    font-family: "Inter", sans-serif;
-
-    /* MESMO TAMANHO DOS TEXTOS PRINCIPAIS */
-    font-size: 18px;
+.planning-receives p {
+    font-size: 0.88rem;
     line-height: 1.6;
-    font-weight: 400;
 }
 
 
-/* =========================================================
-   CTA
-========================================================= */
+/* COLUNA DIREITA */
 
-.planning-cta {
-    margin-top: 28px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 56px;
-    padding: 0 34px;
-
-    white-space: nowrap;
-
-    font-size: 16px;
+.planning-investment h3 {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
 }
 
-
-/* =========================================================
-   EVITA ESPAÇAMENTOS HERDADOS
-========================================================= */
-
-.planning-info,
-.planning-investment {
-    margin-top: 0;
-    margin-bottom: 0;
+.planning-price span {
+    font-size: 0.85rem;
 }
 
-
-/* =========================================================
-   DESKTOP — COMPACTAÇÃO PARA CABER NA PRIMEIRA TELA
-========================================================= */
-
-@media (min-width: 1100px) {
-
-    .planning {
-        padding-top: 45px;
-        padding-bottom: 35px;
-    }
-
-    .planning-grid {
-        gap: 65px;
-    }
-
-    .planning-list {
-        gap: 17px;
-    }
-
-    .planning-item p,
-    .investment-description,
-    .investment-note {
-        font-size: 17px;
-        line-height: 1.48;
-    }
-
-    .planning h2 {
-        margin-bottom: 28px;
-        font-size: 2.35rem;
-    }
-
-    .investment-price {
-        font-size: 3.8rem;
-    }
-
-    .investment-divider {
-        margin: 27px 0 23px;
-    }
-
-    .planning-cta {
-        margin-top: 24px;
-    }
-}
-
-
-/* =========================================================
-   TELAS MENORES
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .planning {
-        min-height: auto;
-        padding: 70px 0;
-        overflow: visible;
-    }
-
-    .planning-grid {
-        grid-template-columns: 1fr;
-        gap: 55px;
-    }
-
-    .planning-investment {
-        width: 100%;
-    }
-
-    .planning-cta {
-        width: 100%;
-    }
-}
-
-
-/* =========================================================
-   CELULAR
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .planning {
-        padding: 55px 0;
-    }
-
-    .planning-grid {
-        gap: 45px;
-    }
-
-    .planning h2 {
-        font-size: 2rem;
-        margin-bottom: 25px;
-    }
-
-    .planning-list {
-        gap: 18px;
-    }
-
-    .planning-item {
-        grid-template-columns: 25px 1fr;
-        column-gap: 12px;
-    }
-
-    .planning-item p,
-    .investment-description,
-    .investment-note {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .investment-price {
-        font-size: 3.2rem;
-    }
-
-    .investment-divider {
-        margin: 25px 0 22px;
-    }
-
-    .planning-cta {
-        min-height: 54px;
-        padding: 0 20px;
-        font-size: 15px;
-    }
+.planning-price strong {
+    font-size: 2rem;
 }

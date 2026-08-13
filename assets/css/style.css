@@ -1088,8 +1088,9 @@ PLANEJAMENTO JURÍDICO
 .planning-cta {
     margin-top: 18px;
     text-align: center;
+    width: auto;
+    align-self: flex-start;
 }
-
 
 /* =========================
    RESPONSIVO

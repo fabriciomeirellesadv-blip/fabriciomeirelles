@@ -945,32 +945,9 @@ ACCESSIBILITY
 PLANEJAMENTO JURÍDICO
 ========================= */
 
-.planning-intro {
-    margin-bottom: 28px;
-}
-
-.planning-intro h2 {
-    font-size: 1.45rem;
-    line-height: 1.4;
-    font-weight: 500;
-    margin-bottom: 12px;
-}
-
-.planning-intro p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-
-/* MANTÉM AS DUAS COLUNAS */
-
 .planning-grid {
     align-items: start;
 }
-
-
-/* COLUNA ESQUERDA */
 
 .planning-info {
     display: flex;
@@ -986,28 +963,28 @@ PLANEJAMENTO JURÍDICO
     align-self: flex-start;
 }
 
-.planning-receives h3 {
-    font-size: 0.95rem;
-    margin-bottom: 16px;
+.planning-intro {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
 }
 
-.planning-receives p {
+.planning-info h3,
+.planning-investment h3 {
+    font-size: 0.95rem;
+    line-height: 1.3;
+}
+
+.planning-info p {
     font-size: 0.88rem;
     line-height: 1.6;
 }
 
-
-/* COLUNA DIREITA */
-
-.planning-investment h3 {
-    font-size: 0.95rem;
-    margin-bottom: 16px;
-}
-
-.planning-price span {
-    font-size: 0.85rem;
+.planning-price {
+    font-size: 0.9rem;
 }
 
 .planning-price strong {
     font-size: 2rem;
+    font-weight: 500;
 }

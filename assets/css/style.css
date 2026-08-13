@@ -945,46 +945,82 @@ ACCESSIBILITY
 PLANEJAMENTO JURÍDICO
 ========================= */
 
-.planning-grid {
-    align-items: start;
-}
-
-.planning-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-}
-
-.planning-info .btn {
-    width: auto;
-    height: auto;
-    min-height: 0;
-    align-self: flex-start;
-}
-
 .planning-intro {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 28px;
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.65;
 }
 
-.planning-info h3,
-.planning-investment h3 {
-    font-size: 0.95rem;
-    line-height: 1.3;
+
+/* DUAS COLUNAS */
+
+.planning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: start;
+    text-align: left;
+}
+
+
+/* COLUNA ESQUERDA */
+
+.planning-info h3 {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 22px;
 }
 
 .planning-info p {
     font-size: 0.88rem;
-    line-height: 1.6;
+    line-height: 1.65;
+    margin: 0 0 18px;
+}
+
+
+/* COLUNA DIREITA */
+
+.planning-investment h3 {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 22px;
 }
 
 .planning-price {
     font-size: 0.9rem;
+    margin-bottom: 30px;
 }
 
 .planning-price strong {
     font-size: 2rem;
     font-weight: 500;
+}
+
+
+/* CTA */
+
+.planning-investment .btn {
+    width: auto;
+    height: auto;
+    min-height: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .planning-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .planning-intro {
+        margin-bottom: 40px;
+    }
+
 }

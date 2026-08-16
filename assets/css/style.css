@@ -668,10 +668,12 @@ p {
     margin-bottom: 40px;
 }
 
-.footer-brand {
-    max-width: 560px;
+.footer-logo {
+    width: 190px;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
 }
-
 .footer strong {
     display: block;
     font-family: var(--title-font);

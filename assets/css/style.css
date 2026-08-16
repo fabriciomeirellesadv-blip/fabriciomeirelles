@@ -1003,3 +1003,73 @@ ACCESSIBILITY
     min-height: 0;
     margin-top: -18px;
 }
+.planning-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.planning-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    padding-top: 10px;
+}
+
+/* Títulos principais das duas colunas */
+
+.planning-card h3,
+.planning-value h3 {
+    color: var(--gold);
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+
+/* Lista — O que você recebe */
+
+.planning-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.planning-card li {
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 20px;
+}
+
+.planning-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--gold);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* Texto — Mais clareza para decidir */
+
+.planning-value p {
+    margin-bottom: 18px;
+    max-width: 560px;
+}
+
+
+/* CTA */
+
+.planning-info .btn {
+    align-self: flex-start;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    margin-top: -8px;
+}

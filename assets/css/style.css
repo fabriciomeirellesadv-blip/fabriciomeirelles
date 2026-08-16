@@ -660,12 +660,12 @@ p {
     border-top: 1px solid var(--border);
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px;
-    margin-bottom: 40px;
+.footer-brand .footer-logo {
+    width: 240px !important;
+    max-width: 240px !important;
+    height: auto !important;
+    display: block;
+    margin-bottom: 14px;
 }
 
 .footer-brand .footer-logo {

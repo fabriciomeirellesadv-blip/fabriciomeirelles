@@ -1073,3 +1073,79 @@ ACCESSIBILITY
     min-height: 0;
     margin-top: -8px;
 }
+
+/* =========================
+   CORREÇÃO ESTRUTURAL
+   ========================= */
+
+main {
+    display: block;
+    width: 100%;
+}
+
+main > section {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    width: 100%;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================
+   SEÇÕES
+   ========================= */
+
+.section {
+    width: 100%;
+}
+
+.section > .container {
+    width: 100%;
+}
+
+
+/* =========================
+   PLANEJAMENTO
+   ========================= */
+
+.planning-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 70px;
+    align-items: start;
+}
+
+
+/* =========================
+   AUTHORITY
+   ========================= */
+
+.authority-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.cards-grid {
+    display: grid;
+}

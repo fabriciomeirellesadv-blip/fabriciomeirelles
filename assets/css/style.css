@@ -1150,3 +1150,22 @@ main > section {
 .cards-grid {
     display: grid;
 }
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-social {
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+}

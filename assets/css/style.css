@@ -930,7 +930,7 @@ ACCESSIBILITY
 
 
 /* =========================
-PLANEJAMENTO JURÍDICO
+   PLANEJAMENTO JURÍDICO
 ========================= */
 
 /* =========================
@@ -962,6 +962,14 @@ PLANEJAMENTO JURÍDICO
     max-width: 560px;
 }
 
+.planning-outcomes {
+    margin-top: 18px;
+}
+
+.planning-outcomes h3 {
+    margin-bottom: 28px;
+}
+
 .planning-outcomes ul {
     list-style: none;
     padding: 0;
@@ -970,8 +978,8 @@ PLANEJAMENTO JURÍDICO
 
 .planning-outcomes li {
     position: relative;
-    padding-left: 24px;
-    margin-bottom: 14px;
+    padding-left: 34px;
+    margin-bottom: 18px;
 }
 
 .planning-outcomes li::before {

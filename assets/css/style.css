@@ -270,10 +270,11 @@ p {
     display: flex;
     align-items: flex-start;
     position: relative;
-    padding-top: 70px;
+    padding-top: 35px;
     overflow: hidden;
+}
 
-}.hero::before {
+.hero::before {
 
     content: "";
     position: absolute;
@@ -302,12 +303,12 @@ p {
 
 
 .eyebrow {
-color: var(--gold);
-font-size: 0.70rem;
-letter-spacing: 4px;
-text-transform: uppercase;
-margin-top: 20px;
-margin-bottom: 8px;
+    color: var(--gold);
+    font-size: 0.70rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 .eyebrow span {
     margin: 0 10px;
@@ -327,7 +328,7 @@ margin-bottom: 8px;
     margin-bottom: 24px;
 }
 .hero-content {
-    transform: translateY(-20px);
+    transform: none;
 }
 
 .hero-buttons {

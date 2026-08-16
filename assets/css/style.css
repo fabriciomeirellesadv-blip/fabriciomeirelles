@@ -933,24 +933,14 @@ ACCESSIBILITY
    PLANEJAMENTO JURÍDICO
 ========================= */
 
-/* =========================
-   PLANEJAMENTO JURÍDICO
-========================= */
-
-.planning-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 70px;
-    align-items: start;
-}
-
 .planning-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 38px;
+    gap: 22px;
     padding-top: 10px;
 }
+
 
 /* Títulos principais das duas colunas */
 
@@ -998,44 +988,6 @@ ACCESSIBILITY
 }
 
 
-/* Resultados do planejamento */
-
-.planning-outcomes {
-    margin-top: 18px;
-}
-
-.planning-outcomes h3 {
-    color: var(--gold);
-    font-family: "Playfair Display", serif;
-    font-size: 1.35rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 28px;
-}
-
-.planning-outcomes ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.planning-outcomes li {
-    position: relative;
-    padding-left: 34px;
-    margin-bottom: 18px;
-}
-
-.planning-outcomes li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: var(--gold);
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-
 /* CTA */
 
 .planning-info .btn {
@@ -1043,5 +995,5 @@ ACCESSIBILITY
     width: auto;
     height: auto;
     min-height: 0;
-    margin-top: 25px;
+    margin-top: 4px;
 }

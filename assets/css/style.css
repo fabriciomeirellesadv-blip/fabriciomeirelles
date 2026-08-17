@@ -1104,3 +1104,68 @@ ACCESSIBILITY
     }
 
 }
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA — PLANEJAMENTO EM DUAS COLUNAS
+========================================================= */
+
+section.planning .planning-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 70px !important;
+    width: 100% !important;
+}
+
+section.planning .planning-card {
+    display: block !important;
+    flex: 1 1 58% !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+}
+
+section.planning .planning-info {
+    display: flex !important;
+    flex: 1 1 42% !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding-top: 10px !important;
+}
+
+section.planning .planning-value {
+    width: 100% !important;
+}
+
+section.planning .planning-value h3 {
+    margin-top: 0 !important;
+}
+
+section.planning .planning-info .btn {
+    display: inline-flex !important;
+    width: auto !important;
+    align-self: flex-start !important;
+    margin-top: 0 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    section.planning .planning-grid {
+        flex-direction: column !important;
+        gap: 45px !important;
+    }
+
+    section.planning .planning-card,
+    section.planning .planning-info {
+        flex: none !important;
+        width: 100% !important;
+    }
+
+}

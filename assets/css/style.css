@@ -1012,19 +1012,22 @@ ACCESSIBILITY
    PLANEJAMENTO JURÍDICO
 ========================= */
 
-.planning-grid {
+.planning .planning-grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
     gap: 70px;
     align-items: start;
+    width: 100%;
 }
 
-.planning-card {
+.planning .planning-card {
     padding: 0;
+    width: auto;
+    min-width: 0;
 }
 
-.planning-card h3,
-.planning-value h3 {
+.planning .planning-card h3,
+.planning .planning-value h3 {
     color: var(--gold);
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -1033,20 +1036,20 @@ ACCESSIBILITY
     margin: 0 0 28px;
 }
 
-.planning-card ul {
+.planning .planning-card ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.planning-card li {
+.planning .planning-card li {
     position: relative;
     padding-left: 34px;
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
-.planning-card li::before {
+.planning .planning-card li::before {
     content: "✓";
     position: absolute;
     left: 0;
@@ -1056,119 +1059,48 @@ ACCESSIBILITY
     font-weight: 500;
 }
 
-.planning-info {
+.planning .planning-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 22px;
     padding-top: 10px;
+    width: auto;
+    min-width: 0;
 }
 
-.planning-value p {
+.planning .planning-value {
+    width: 100%;
+}
+
+.planning .planning-value p {
     margin: 0 0 18px;
     max-width: 560px;
 }
 
-.planning-info .btn {
+.planning .planning-info .btn {
+    display: inline-flex;
     align-self: flex-start;
     width: auto;
     height: auto;
     min-height: 0;
-    margin-top: -8px;
-}
-/* =========================
-   CORREÇÃO ESTRUTURAL
-========================= */
-
-main {
-    display: block;
-    width: 100%;
-}
-
-main > section {
-    display: block;
-    width: 100%;
-}
-
-.section {
-    width: 100%;
-}
-
-.section > .container {
-    width: 100%;
+    margin-top: 0;
 }
 
 
 /* =========================
-   HERO
+   PLANEJAMENTO — MOBILE
 ========================= */
 
-.hero {
-    width: 100%;
-}
+@media (max-width: 768px) {
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.85fr;
-    align-items: start;
-    gap: 60px;
-    position: relative;
-    z-index: 2;
-    transform: translateY(35px);
-}
+    .planning .planning-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
 
+    .planning .planning-info {
+        padding-top: 0;
+    }
 
-/* =========================
-   AUTHORITY
-========================= */
-
-.authority-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 70px;
-    align-items: center;
-}
-
-
-/* =========================
-   CARDS
-========================= */
-
-.cards-grid {
-    display: grid;
-}
-
-/* =========================
-   PLANEJAMENTO — DUAS COLUNAS
-========================= */
-
-.planning .planning-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
-    gap: 70px !important;
-    align-items: start !important;
-}
-
-.planning .planning-card {
-    display: block !important;
-    width: 100% !important;
-}
-
-.planning .planning-info {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    width: 100% !important;
-    padding-top: 10px !important;
-}
-
-.planning .planning-value {
-    width: 100% !important;
-}
-
-.planning .planning-info .btn {
-    display: inline-flex !important;
-    align-self: flex-start !important;
-    width: auto !important;
-    margin-top: 0 !important;
 }

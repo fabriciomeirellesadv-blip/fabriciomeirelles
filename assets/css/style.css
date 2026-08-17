@@ -299,8 +299,8 @@ p {
     gap: 60px;
     position: relative;
     z-index: 2;
+    transform: translateY(35px);
 }
-
 
 .eyebrow {
     color: var(--gold);

@@ -660,6 +660,14 @@ p {
     border-top: 1px solid var(--border);
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+
+}
+
 .footer-brand .footer-logo {
     display: block;
     width: 180px !important;
@@ -968,13 +976,22 @@ p {
     }
 
 
+    @media (max-width: 768px) {
 
     .footer-content {
-
         flex-direction: column;
-
+        gap: 30px;
     }
 
+    .footer-social {
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
 
 }
 
@@ -1228,4 +1245,4 @@ main > section {
         gap: 18px;
     }
 
-}
+

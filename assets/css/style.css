@@ -320,14 +320,16 @@ p {
     line-height: 1.05;
     margin-bottom: 22px;
 }
+
 .hero-content p {
     max-width: 620px;
     font-size: 1.05rem;
     line-height: 1.6;
     margin-bottom: 24px;
 }
+
 .hero-content {
-    transform: translateY(25px);
+    margin-top: 45px !important;
 }
 
 .hero-buttons {

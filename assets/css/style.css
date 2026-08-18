@@ -1035,6 +1035,18 @@ ACCESSIBILITY
     margin-top: 0;
 }
 
+/* =========================
+   HERO — MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-content {
+        margin-top: 35px !important;
+    }
+
+}
+
 
 /* =========================
    PLANEJAMENTO — MOBILE

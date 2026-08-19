@@ -7,25 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");
 
-    if (!menuToggle || !nav) {
-        return;
-    }
+    if (!menuToggle || !nav) return;
 
-    // Abrir / fechar menu
-    menuToggle.addEventListener("click", function (event) {
-
-        event.preventDefault();
-        event.stopPropagation();
+    menuToggle.addEventListener("click", function () {
 
         nav.classList.toggle("active");
 
     });
 
-
-    // Fechar menu ao clicar em qualquer link
-    const navLinks = nav.querySelectorAll("a");
-
-    navLinks.forEach(function (link) {
+    nav.querySelectorAll("a").forEach(function (link) {
 
         link.addEventListener("click", function () {
 

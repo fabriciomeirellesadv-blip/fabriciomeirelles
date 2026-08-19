@@ -1336,3 +1336,219 @@ p {
     }
 
 }
+
+/* =========================================================
+   AJUSTES EXCLUSIVOS — MOBILE
+   NÃO ALTERA O DESKTOP
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =====================================================
+       MENU
+    ===================================================== */
+
+    .menu-toggle {
+        display: block !important;
+        position: relative;
+        z-index: 1100;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+    .nav {
+        position: fixed !important;
+        top: 0;
+        right: -100% !important;
+
+        width: min(82vw, 320px);
+        height: 100vh;
+
+        background: var(--dark);
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 80px 30px 40px;
+
+        transition: right 0.35s ease;
+
+        z-index: 1050;
+    }
+
+    .nav.active {
+        right: 0 !important;
+    }
+
+    .nav a {
+        display: block;
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+
+    /* =====================================================
+       PLANEJAMENTO
+    ===================================================== */
+
+    .planning-card h3,
+    .planning-value h3 {
+        color: var(--gold) !important;
+    }
+
+    .planning-card ul {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .planning-card li {
+        position: relative !important;
+
+        padding-left: 32px !important;
+
+        margin-bottom: 18px;
+    }
+
+    .planning-card li::before {
+        content: "✓" !important;
+
+        position: absolute !important;
+
+        left: 0 !important;
+        top: 0 !important;
+
+        display: block !important;
+
+        color: var(--gold) !important;
+
+        font-size: 1.05rem !important;
+
+        font-weight: 600 !important;
+
+        line-height: 1.6 !important;
+    }
+
+    .planning-info {
+        gap: 0 !important;
+    }
+
+    .planning-info .btn {
+        width: 100%;
+
+        margin-top: 28px !important;
+
+        justify-content: center;
+    }
+
+
+    /* =====================================================
+       CONTATO / CTA FINAL
+    ===================================================== */
+
+    .cta-box {
+        padding: 45px 22px;
+    }
+
+    .cta-box h2 {
+        max-width: 100%;
+
+        font-size: 1.9rem;
+
+        line-height: 1.15;
+    }
+
+    .cta-box p {
+        max-width: 100%;
+
+        margin-bottom: 30px;
+    }
+
+    .cta-box .btn {
+        width: auto;
+
+        max-width: 100%;
+
+        padding: 15px 25px;
+
+        white-space: normal;
+    }
+
+
+    /* =====================================================
+       RODAPÉ
+    ===================================================== */
+
+    .footer {
+        padding: 50px 0 25px;
+    }
+
+    .footer-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+
+    .footer-brand .footer-logo {
+        width: 210px !important;
+
+        max-width: 210px !important;
+    }
+
+    .footer-social {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .footer-label {
+        margin-bottom: 14px;
+    }
+
+    .social-links {
+        display: flex;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        gap: 14px;
+
+        flex-wrap: nowrap;
+    }
+
+    .social-links a {
+        flex-shrink: 0;
+    }
+
+    .footer-bottom {
+        width: 100%;
+
+        margin-top: 10px;
+
+        padding-top: 20px;
+    }
+
+    .copyright {
+        width: 100%;
+
+        font-size: 0.78rem;
+
+        line-height: 1.5;
+
+        text-align: left;
+    }
+
+}

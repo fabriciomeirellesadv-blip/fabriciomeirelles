@@ -1623,3 +1623,20 @@ p {
     }
 
 }
+
+/* =========================
+   HERO — AJUSTE DESKTOP
+========================= */
+
+@media (min-width: 769px) {
+
+    .hero-content {
+        transform: translateY(-25px);
+    }
+
+    .hero-content h1 {
+        font-size: 58px;
+        line-height: 1.05;
+    }
+
+}

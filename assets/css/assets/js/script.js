@@ -4,119 +4,119 @@
 // MOBILE MENU
 // =========================
 
-
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 
-
-if(menuToggle){
+if (menuToggle && nav) {
 
     menuToggle.addEventListener("click", () => {
 
-        nav.classList.toggle("active");
+        const isOpen = nav.classList.toggle("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
 
     });
 
 }
 
 
-
-// Fechar menu ao clicar em um link
-
+// =========================
+// FECHAR MENU AO CLICAR
+// =========================
 
 const navLinks = document.querySelectorAll(".nav a");
-
 
 navLinks.forEach(link => {
 
     link.addEventListener("click", () => {
 
-        nav.classList.remove("active");
+        if (nav) {
+            nav.classList.remove("active");
+        }
+
+        if (menuToggle) {
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
 
     });
 
 });
 
 
-
-
-
 // =========================
 // HEADER SCROLL EFFECT
 // =========================
 
-
 const header = document.querySelector(".header");
 
+if (header) {
 
-window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => {
 
+        if (window.scrollY > 50) {
 
-    if(window.scrollY > 50){
+            header.classList.add("scrolled");
 
-        header.classList.add("scrolled");
+        } else {
 
-    } else {
+            header.classList.remove("scrolled");
 
-        header.classList.remove("scrolled");
+        }
 
-    }
+    });
 
-
-});
-
-
-
+}
 
 
 // =========================
 // REVEAL ANIMATION
 // =========================
 
-
 const revealElements = document.querySelectorAll(
     ".section, .card, .step, .number-item"
 );
 
+if ("IntersectionObserver" in window) {
 
+    const observer = new IntersectionObserver(
 
-const observer = new IntersectionObserver(
-    
-    entries => {
+        entries => {
 
+            entries.forEach(entry => {
 
-        entries.forEach(entry => {
+                if (entry.isIntersecting) {
 
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target);
 
-            if(entry.isIntersecting){
+                }
 
-                entry.target.classList.add("reveal-active");
+            });
 
-            }
+        },
 
+        {
+            threshold: 0.15
+        }
 
-        });
+    );
 
+    revealElements.forEach(element => {
 
-    },
+        element.classList.add("reveal");
+        observer.observe(element);
 
-    {
+    });
 
-        threshold: 0.15
+} else {
 
-    }
+    revealElements.forEach(element => {
 
+        element.classList.add("active");
 
-);
+    });
 
-
-
-revealElements.forEach(element => {
-
-
-    element.classList.add("reveal");
-
-    observer.observe(element);
-
-
-});
+}

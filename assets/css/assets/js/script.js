@@ -1,13 +1,13 @@
-// =========================================================
+// =========================
 // MOBILE MENU
-// =========================================================
+// =========================
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 
 if (menuToggle && nav) {
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", function () {
 
         nav.classList.toggle("active");
 
@@ -15,6 +15,22 @@ if (menuToggle && nav) {
 
 }
 
+
+// Fechar menu ao clicar em um link
+
+const navLinks = document.querySelectorAll(".nav a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        if (nav) {
+            nav.classList.remove("active");
+        }
+
+    });
+
+});
 
 // =========================================================
 // FECHAR MENU AO CLICAR EM UM LINK

@@ -857,7 +857,6 @@ p {
    RESPONSIVE MOBILE
 ========================= */
 
-
 @media (max-width: 768px) {
 
     .section {
@@ -866,20 +865,23 @@ p {
 
     .header {
         padding: 20px 0;
-  .nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: var(--dark);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    transition: right 0.35s ease;
-    z-index: 1001;
-}
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--dark);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.35s ease;
+        z-index: 1001;
+    }
+
     .nav.active {
         right: 0;
     }
@@ -921,7 +923,7 @@ p {
         padding: 50px 25px;
     }
 
-} /* ← ESTA CHAVE ESTAVA FALTANDO */
+}  /* ← ESTA É A CHAVE QUE ESTAVA FALTANDO */
 
 
 /* =========================

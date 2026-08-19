@@ -970,10 +970,6 @@ ACCESSIBILITY
     width: 100%;
 }
 
-.planning-column {
-    min-width: 0;
-}
-
 .planning-card {
     padding: 0;
 }
@@ -1018,6 +1014,9 @@ ACCESSIBILITY
     gap: 22px;
     padding-top: 10px;
 }
+.planning-value {
+    width: 100%;
+}
 
 .planning-value {
     width: 100%;
@@ -1034,7 +1033,6 @@ ACCESSIBILITY
     width: auto;
     margin-top: 0;
 }
-
 /* =========================
    HERO — MOBILE
 ========================= */

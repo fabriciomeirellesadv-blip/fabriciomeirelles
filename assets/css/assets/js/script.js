@@ -2,31 +2,36 @@
 // MOBILE MENU
 // =========================
 
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (menuToggle && nav) {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
 
-    menuToggle.addEventListener("click", function () {
+    if (!menuToggle || !nav) {
+        return;
+    }
+
+    // Abrir / fechar menu
+    menuToggle.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
 
         nav.classList.toggle("active");
 
     });
 
-}
 
+    // Fechar menu ao clicar em qualquer link
+    const navLinks = nav.querySelectorAll("a");
 
-// Fechar menu ao clicar em um link
+    navLinks.forEach(function (link) {
 
-const navLinks = document.querySelectorAll(".nav a");
+        link.addEventListener("click", function () {
 
-navLinks.forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        if (nav) {
             nav.classList.remove("active");
-        }
+
+        });
 
     });
 

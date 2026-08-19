@@ -243,9 +243,10 @@ p {
     background: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
+    z-index: 1002;
 
 }
-
 
 
 .menu-toggle span {
@@ -865,21 +866,20 @@ p {
 
     .header {
         padding: 20px 0;
-    }
-
-    .nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 280px;
-        height: 100vh;
-        background: var(--dark);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: var(--transition);
-    }
-
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--dark);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.35s ease;
+    z-index: 1001;
+}
     .nav.active {
         right: 0;
     }

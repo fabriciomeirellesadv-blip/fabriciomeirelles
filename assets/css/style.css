@@ -1635,3 +1635,13 @@ p {
     }
 
 }
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        background: red !important;
+        width: 50px !important;
+        height: 50px !important;
+        position: relative !important;
+        z-index: 99999 !important;
+    }
+}

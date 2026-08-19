@@ -7,119 +7,110 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");
 
-    if (!menuToggle || !nav) return;
+    // =========================
+    // ABRIR / FECHAR MENU
+    // =========================
 
-    menuToggle.addEventListener("click", function () {
+    if (menuToggle && nav) {
 
-        nav.classList.toggle("active");
+        menuToggle.addEventListener("click", function () {
 
-    });
-
-    nav.querySelectorAll("a").forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            nav.classList.remove("active");
+            nav.classList.toggle("active");
 
         });
 
-    });
+        // =========================
+        // FECHAR MENU AO CLICAR EM LINK
+        // =========================
 
-});
+        nav.querySelectorAll("a").forEach(function (link) {
 
-// =========================================================
-// FECHAR MENU AO CLICAR EM UM LINK
-// =========================================================
+            link.addEventListener("click", function () {
 
-const navLinks = document.querySelectorAll(".nav a");
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        if (nav) {
-            nav.classList.remove("active");
-        }
-
-    });
-
-});
-
-
-// =========================================================
-// HEADER SCROLL EFFECT
-// =========================================================
-
-const header = document.querySelector(".header");
-
-if (header) {
-
-    window.addEventListener("scroll", () => {
-
-        if (window.scrollY > 50) {
-
-            header.classList.add("scrolled");
-
-        } else {
-
-            header.classList.remove("scrolled");
-
-        }
-
-    });
-
-}
-
-
-// =========================================================
-// REVEAL ANIMATION
-// =========================================================
-
-const revealElements = document.querySelectorAll(
-    ".section, .card, .step, .number-item"
-);
-
-if ("IntersectionObserver" in window) {
-
-    const observer = new IntersectionObserver(
-
-        entries => {
-
-            entries.forEach(entry => {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("active");
-
-                    observer.unobserve(entry.target);
-
-                }
+                nav.classList.remove("active");
 
             });
 
-        },
+        });
 
-        {
-            threshold: 0.15
-        }
+    }
 
+
+    // =========================
+    // HEADER SCROLL EFFECT
+    // =========================
+
+    const header = document.querySelector(".header");
+
+    if (header) {
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 50) {
+
+                header.classList.add("scrolled");
+
+            } else {
+
+                header.classList.remove("scrolled");
+
+            }
+
+        });
+
+    }
+
+
+    // =========================
+    // REVEAL ANIMATION
+    // =========================
+
+    const revealElements = document.querySelectorAll(
+        ".section, .card, .step, .number-item"
     );
 
+    if ("IntersectionObserver" in window) {
 
-    revealElements.forEach(element => {
+        const observer = new IntersectionObserver(
 
-        element.classList.add("reveal");
+            function (entries) {
 
-        observer.observe(element);
+                entries.forEach(function (entry) {
 
-    });
+                    if (entry.isIntersecting) {
 
-} else {
+                        entry.target.classList.add("active");
 
-    revealElements.forEach(element => {
+                        observer.unobserve(entry.target);
 
-        element.classList.add("active");
+                    }
 
-    });
+                });
 
-}
+            },
+
+            {
+                threshold: 0.15
+            }
+
+        );
+
+        revealElements.forEach(function (element) {
+
+            element.classList.add("reveal");
+
+            observer.observe(element);
+
+        });
+
+    } else {
+
+        revealElements.forEach(function (element) {
+
+            element.classList.add("active");
+
+        });
+
+    }
+
+});

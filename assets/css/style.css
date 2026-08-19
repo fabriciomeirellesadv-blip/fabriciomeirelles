@@ -1554,48 +1554,6 @@ p {
 }
 
 /* =========================
-   MENU MOBILE — CORREÇÃO FINAL
-========================= */
-
-@media (max-width: 768px) {
-
-    .nav {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-
-        width: 280px !important;
-        height: 100vh !important;
-
-        background: var(--dark) !important;
-
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-
-        gap: 30px !important;
-
-        z-index: 1001 !important;
-
-        transform: translateX(100%);
-        transition: transform 0.35s ease !important;
-    }
-
-    .nav.active {
-        transform: translateX(0) !important;
-    }
-
-    .menu-toggle {
-        display: block !important;
-        position: relative !important;
-        z-index: 1002 !important;
-        cursor: pointer !important;
-    }
-
-}
-
-/* =========================
    MENU MOBILE — FINAL
 ========================= */
 
@@ -1634,14 +1592,4 @@ p {
         cursor: pointer !important;
     }
 
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        background: red !important;
-        width: 50px !important;
-        height: 50px !important;
-        position: relative !important;
-        z-index: 99999 !important;
-    }
 }

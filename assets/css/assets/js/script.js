@@ -1,8 +1,6 @@
-
-
-// =========================
+// =========================================================
 // MOBILE MENU
-// =========================
+// =========================================================
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
@@ -11,21 +9,16 @@ if (menuToggle && nav) {
 
     menuToggle.addEventListener("click", () => {
 
-        const isOpen = nav.classList.toggle("active");
-
-        menuToggle.setAttribute(
-            "aria-expanded",
-            isOpen ? "true" : "false"
-        );
+        nav.classList.toggle("active");
 
     });
 
 }
 
 
-// =========================
-// FECHAR MENU AO CLICAR
-// =========================
+// =========================================================
+// FECHAR MENU AO CLICAR EM UM LINK
+// =========================================================
 
 const navLinks = document.querySelectorAll(".nav a");
 
@@ -37,18 +30,14 @@ navLinks.forEach(link => {
             nav.classList.remove("active");
         }
 
-        if (menuToggle) {
-            menuToggle.setAttribute("aria-expanded", "false");
-        }
-
     });
 
 });
 
 
-// =========================
+// =========================================================
 // HEADER SCROLL EFFECT
-// =========================
+// =========================================================
 
 const header = document.querySelector(".header");
 
@@ -71,9 +60,9 @@ if (header) {
 }
 
 
-// =========================
+// =========================================================
 // REVEAL ANIMATION
-// =========================
+// =========================================================
 
 const revealElements = document.querySelectorAll(
     ".section, .card, .step, .number-item"
@@ -90,6 +79,7 @@ if ("IntersectionObserver" in window) {
                 if (entry.isIntersecting) {
 
                     entry.target.classList.add("active");
+
                     observer.unobserve(entry.target);
 
                 }
@@ -104,9 +94,11 @@ if ("IntersectionObserver" in window) {
 
     );
 
+
     revealElements.forEach(element => {
 
         element.classList.add("reveal");
+
         observer.observe(element);
 
     });

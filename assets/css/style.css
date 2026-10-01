@@ -1178,19 +1178,21 @@ p {
 
 
     /* -----------------------------------------------------
-       SECTION HEADERS
-    ----------------------------------------------------- */
+   SECTION HEADERS
+----------------------------------------------------- */
 
-    .section-header {
-        margin-bottom: 45px;
-    }
+.section-header {
+    margin-bottom: 45px;
+}
 
+.section-header p {
+    font-size: 1rem;
+}
 
-    .section-header p {
-        font-size: 1rem;
-    }
-
-
+.faq-section .section-header {
+    margin-bottom: 25px;
+}
+    
     /* -----------------------------------------------------
        CARDS
     ----------------------------------------------------- */

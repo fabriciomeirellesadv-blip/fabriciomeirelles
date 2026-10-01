@@ -1191,7 +1191,11 @@ p {
 
 .faq-section .section-header {
     margin-bottom: 25px;
-}    
+}
+
+.faq-item:first-child {
+    padding-top: 10px;
+}
     /* -----------------------------------------------------
        CARDS
     ----------------------------------------------------- */

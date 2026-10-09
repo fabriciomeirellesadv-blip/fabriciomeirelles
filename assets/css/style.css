@@ -1645,3 +1645,25 @@ p {
     }
 
 }
+
+
+.related-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.related-content p {
+  margin: 0;
+}
+
+.related-content a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.related-content a:hover {
+  text-decoration-thickness: 2px;
+}
